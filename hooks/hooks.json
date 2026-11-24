@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "hooks": {
+    "sessionStart": [
+      {
+        "command": "node scripts/emit-event.cjs sessionStart"
+      }
+    ],
+    "sessionEnd": [
+      {
+        "command": "node scripts/emit-event.cjs sessionEnd"
+      }
+    ],
+    "beforeSubmitPrompt": [
+      {
+        "command": "node scripts/emit-event.cjs beforeSubmitPrompt"
+      }
+    ],
+    "afterAgentThought": [
+      {
+        "command": "node scripts/emit-event.cjs afterAgentThought"
+      }
+    ],
+    "preToolUse": [
+      {
+        "command": "node scripts/emit-event.cjs preToolUse"
+      }
+    ],
+    "postToolUse": [
+      {
+        "command": "node scripts/emit-event.cjs postToolUse"
+      }
+    ],
+    "postToolUseFailure": [
+      {
+        "command": "node scripts/emit-event.cjs postToolUseFailure"
+      }
+    ],
+    "subagentStart": [
+      {
+        "command": "node scripts/emit-event.cjs subagentStart"
+      }
+    ],
+    "subagentStop": [
+      {
+        "command": "node scripts/emit-event.cjs subagentStop"
+      }
+    ],
+    "afterFileEdit": [
+      {
+        "command": "node scripts/emit-event.cjs afterFileEdit"
+      }
+    ],
+    "afterAgentResponse": [
+      {
+        "command": "node scripts/emit-event.cjs afterAgentResponse"
+      }
+    ],
+    "stop": [
+      {
+        "command": "node scripts/emit-event.cjs stop"
+      }
+    ]
+  }
+}

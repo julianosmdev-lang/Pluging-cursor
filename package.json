@@ -1,0 +1,51 @@
+{
+  "name": "pixel-office",
+  "displayName": "Pixel Office",
+  "description": "A live pixel-art observability dashboard for Cursor Agent.",
+  "version": "0.1.0",
+  "publisher": "pixel-office",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Visualization"
+  ],
+  "activationEvents": [
+    "onCommand:pixelOffice.open"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "pixelOffice.open",
+        "title": "Pixel Office: Open Live Office"
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "pixelOffice",
+          "title": "Pixel Office",
+          "icon": "media/office.svg"
+        }
+      ]
+    },
+    "views": {
+      "pixelOffice": [
+        {
+          "id": "pixelOffice.dashboard",
+          "name": "Live Office"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "compile": "tsc -p .",
+    "watch": "tsc -watch -p ."
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/vscode": "^1.85.0",
+    "typescript": "^5.4.0"
+  }
+}

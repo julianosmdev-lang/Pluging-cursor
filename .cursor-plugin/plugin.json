@@ -1,0 +1,10 @@
+{
+  "name": "pixel-office",
+  "displayName": "Pixel Office",
+  "version": "0.1.0",
+  "description": "Visualize Cursor agent activity as a live isometric pixel-art office.",
+  "author": {
+    "name": "Pixel Office"
+  },
+  "license": "MIT"
+}
